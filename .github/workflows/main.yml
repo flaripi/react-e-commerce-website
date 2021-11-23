@@ -34,3 +34,14 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+  #workflow to deploy
+  deploy:
+    runs-on: self-hosted
+
+    steps:
+      #Steps to deploy
+      - uses: actions/checkout@v2
+
+      # Runs a single command using the runners shell
+      - name: Run echo hello world
+        run: echo Hello, world!
