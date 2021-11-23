@@ -40,7 +40,6 @@ jobs:
 
     steps:
       #Steps to deploy
-      - name: Run checkout last version
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
